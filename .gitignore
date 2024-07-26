@@ -1,0 +1,9 @@
+*.nii
+*.npy
+*.ipynb
+*.pyc
+*.csv
+*.pt
+*.pth
+*.log
+*.pkl
