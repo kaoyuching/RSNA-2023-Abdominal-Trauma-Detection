@@ -1,0 +1,28 @@
+window_level: 50
+#window_level: 150
+window_width: 400
+height: 256
+width: 256
+max_depth: 96
+dataset_mode: 'resize'
+
+batch_size: 4
+num_workers: 4
+
+#model_name: 'resnet50'
+model_name: 'efficientnet_b0'
+#model_pretrained: './pretrained/resnet_50_23dataset.pth'
+model_pretrained: null
+organ_only: false
+
+learning_rate: 2.5e-4
+weight_decay: 1.0e-5
+eta_min: 2.5e-5
+#eta_min: 1.0e-7
+
+epochs: 20
+model_path_loss: './models/resnet50_best_loss_resize_256_crop_custom14v2.pth'
+model_path_score: './models/resnet50_best_score_resize_256_crop_custom14v2.pth'
+
+log_filename: './log_record/resnet50_resize_256_crop_custom14v2.log'
+cache_path: null
